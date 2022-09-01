@@ -11,7 +11,7 @@ import redmaple.common.util.JedisUtil;
  * @date: 2022/9/1 14:01
  */
 @RestController
-public class RedisStandloneController {
+public class RedisSentinelController {
 
     @Autowired
     private JedisUtil jedisUtil;
