@@ -6,7 +6,13 @@
 
     <groupId>com.redmaple</groupId>
     <artifactId>springboot-redis</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>redis-standalone</module>
+        <module>redis-sentinel</module>
+        <module>redis-cluster</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,9 +26,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- 集成lombok 框架 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
         <!-- springboot-redis 和 jedis -->

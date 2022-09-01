@@ -6,11 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @description:
  * @author: uwank171
- * @date: 2021/10/18 16:56
+ * @date: 2022/9/1 13:16
  */
 @SpringBootApplication
-public class RedisApp {
+public class RedisStandloneApp {
     public static void main(String[] args) {
-        SpringApplication.run(RedisApp.class, args);
+        SpringApplication.run(RedisStandloneApp.class);
     }
 }
