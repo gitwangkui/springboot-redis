@@ -1,0 +1,22 @@
+server:
+  port: 7000
+
+spring:
+  redis:
+    database: 0
+    host: 172.28.13.140
+    port: 7000
+    password: China1234
+    timeout: 10000
+    jedis:
+      pool:
+        max-active: 500
+        min-idle: 5
+        max-idle: 50
+        max-wait: 60000
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    ## 数据库
+    url: jdbc:mysql://127.0.0.1:3306/gi_test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
