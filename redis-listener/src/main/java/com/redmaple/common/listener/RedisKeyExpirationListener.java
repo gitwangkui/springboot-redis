@@ -42,12 +42,10 @@ public class RedisKeyExpirationListener extends KeyExpirationEventMessageListene
     public void onMessage(Message message, byte[] pattern) {
         // 表示失效过期的key值
         String expiraKey = message.toString();
-
+        System.out.println(">>>>> 过期的key: " + expiraKey);
         // 做业务处理 TODO
         if (expiraKey.startsWith(ORDER_)) {
             orderService.doOrderExpireKey(expiraKey);
         }
-
     }
-
 }
