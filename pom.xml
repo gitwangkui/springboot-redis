@@ -13,6 +13,7 @@
         <module>redis-sentinel</module>
         <module>redis-cluster</module>
         <module>redis-listener</module>
+        <module>redis-lock</module>
     </modules>
 
     <parent>
